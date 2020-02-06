@@ -1,7 +1,7 @@
 # Google VRP testing  
 Google cloudshell instance take over (as root)
 
-[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://ssh.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https%3A%2F%2Fgithub.com%2Fomespino%2Fgcs_instace_takeover&cloudshell_tutorial=readme.md)
+[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://ssh.cloud.google.com/cloudshell/editor?page=editor&cloudshell_git_repo=https:%2F%2Fgithub.com%2Fomespino%2Fgccloud_profile.git&cloudshell_open_in_editor=readme.md)
 
 ## Getting Started 
 just need to preview this file to see the magic 
