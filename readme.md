@@ -21,7 +21,7 @@ just need to preview this file to see the magic
     function read_file(file_to_read){
         var container_url = 'https://' + location.host + '/files/?uri='
         var get_file_id_url = container_url + file_to_read
-        // console.log(get_file_id_url) 
+        console.log(get_file_id_url) 
         fetch(get_file_id_url) // convert response to json 
             .then(response => { return response.json() } )
             .then(json => {
