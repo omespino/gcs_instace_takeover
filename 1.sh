@@ -1,0 +1,3 @@
+`id`
+`whoami`
+$(hostname)
