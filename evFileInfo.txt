@@ -1,0 +1,13 @@
+[ev-WebService-Linux-20.03.2.0]
+Version=20.03.2.0
+Date=03-05-2020
+Downloadable=True
+Link=https://cdnpublic.exacq.com/20.03/exacqVisionWebService_20.03.2.0_x86.deb
+Package=Linux
+Product=webservice
+Signed=False
+Filesize=124771822
+ChecksumType=md5
+ChecksumHash=fc73c9636d47d8828e77fcdeff3f309c
+Status=Recommended
+Extension=deb
